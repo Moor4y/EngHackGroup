@@ -9,3 +9,6 @@ Brainstorming
 - cookie clicker but instead of clicking for cookies, you get cats, and it makes a meow sound everytime you clicker
 
 - write a script to scalp the web for gaming laptop prices and put them into an excel sheet
+
+- game --> create some text-based adventure
+
