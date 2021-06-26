@@ -1,14 +1,51 @@
 #Data Storing 
-arrQ = ["Do you like hands on work or programming?",    #array to store question information
-                 "",
-                 ""]
-arrA = ["Hate programming, gimme the hands on stuff",   #array to store option A information
-          "",
-          ""]
-arrB = ["Programming master race",                      #array to store option B information
-          "",
-          ""]
+arrQ = ["What is your learning style?",    #array to store question information
+        "would you like to work in the natural environment",
+        "Like studying rocks and dirt?",
+        "Would you like to work with buildings and infrastructure",
+        "Do you prefer artistic design or structural planning?",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""]
+
+arrA = ["Gimme the hands on stuff",   #array to store option A information
+        "I love working with nature.",
+        "I'm mining for diamonds",
+        "I love buildings.",
+        "artistic design",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""]
+arrB = ["Gimme the hands off stuff",  #array to store option B information
+        "I would rather not work with nature.",
+        "No, that sounds boring.",
+        "I hate buildings.",
+        "structural planning",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""]
 arrComment = ["",                                       #array to store comment information
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
               "",
               ""]
 
@@ -50,3 +87,30 @@ elif userGrade == 0:
 
 printQuestion(arrQ[0],arrA[0],arrB[0])
 userInput = getMCPick()
+
+#branch 1
+if userInput == 'A': #hands on
+    printQuestion(arrQ[1],arrA[1],arrB[1])
+    userInput = getMCPick()
+    if userInput == 'A': #love nature
+        printQuestion(arrQ[2],arrA[2],arrB[2])
+        userInput = getMCPick()
+        if userInput == 'A': #love rocks:
+            print ("You belong in Geological Engineering.")
+        else: #no rocks
+            print ("You belong in Environmental Engineering.")
+    else: #no like nature
+        printQuestion (arrQ[3], arrA[3],arrB[3])
+        userInput = getMCPick()
+        if userInput == 'A': #love buildings
+            printQuestion (arrQ[4], arrA[4],arrB[4])
+            userInput = getMCPick()
+            if userInput == 'A':
+                print ("You belong in Archetectural Engineering")
+            else:
+                print ("You belong in Civil Engineering")
+
+
+            
+
+
