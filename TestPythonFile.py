@@ -4,14 +4,14 @@ arrQ = ["What is your learning style?",    #array to store question information
         "Like studying rocks and dirt?",
         "Would you like to work with buildings and infrastructure",
         "Do you prefer artistic design or structural planning?",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Would you like to work in a lab or [blank]?",
+        "How about medicine?",
+        "Would you prefer working in research and development or keeping your options open?",
+        "Are you interested in creating moving parts that work together?",
+        "Like robots?",
+        "Would you like to focus on hardware and technology or do you have a wider range of engineering interests?",
+        "Would you like to work with computer parts or with power and energy?",
+        "Medicine?",
         "",
         "",
         "",
@@ -22,8 +22,14 @@ arrA = ["Gimme the hands on stuff",   #array to store option A information
         "I'm mining for diamonds",
         "I love buildings.",
         "artistic design",
-        "",
-        "",
+        "Gimme my lab coat.",
+        "Yes, medicine is bae.",
+        "Let's keep it broad",
+        "I want to make machines.",
+        "Robots are my jam.",
+        "Hardware and Tech please",
+        "Power and Energy",
+        "Nah bro",
         "",
         "",
         "",
@@ -33,10 +39,14 @@ arrB = ["Gimme the hands off stuff",  #array to store option B information
         "No, that sounds boring.",
         "I hate buildings.",
         "structural planning",
-        "",
-        "",
-        "",
-        "",
+        "Heck no, labs are boring.",
+        "No, I don't want drugs.",
+        "Gimme research.",
+        "No, I don't like moving parts.",
+        "No, robots.",
+        "I like broad",
+        "Computers",
+        "Yeah bro",
         "",
         ""]
 arrComment = ["",                                       #array to store comment information
@@ -109,6 +119,51 @@ if userInput == 'A': #hands on
                 print ("You belong in Archetectural Engineering")
             else:
                 print ("You belong in Civil Engineering")
+        else: #no like buildings
+            printQuestion (arrQ[5], arrA[5],arrB[5])
+            userInput = getMCPick()
+            if userInput == 'A': #yes lab
+                printQuestion (arrQ[6], arrA[6],arrB[6])
+                userInput = getMCPick()
+                if userInput == "A": #yes medicine
+                    print ("You belong in Biomedical Engineering")
+                else:
+                    printQuestion (arrQ[7], arrA[7],arrB[7])
+                    userInput = getMCPick()
+                    if userInput == 'A': #broad
+                        print ("You belong in Chemical Engineering")            
+                    else:
+                        print ("You belong in Nanotechnology Engineering")
+            else: #no lab
+                printQuestion (arrQ[8], arrA[8],arrB[8])
+                userInput = getMCPick()
+                if userInput == 'A': 
+                    printQuestion (arrQ[9], arrA[9],arrB[9])
+                    userInput = getMCPick()
+                    if userInput == 'A':
+                        print ("You belong in Mechatronics Engineering")
+                    else:
+                        print ("You belong in Mechanical Engineering")
+                else:
+                    printQuestion (arrQ[10], arrA[10],arrB[10])
+                    userInput = getMCPick()
+                    if userInput == 'A': #hardware
+                        printQuestion (arrQ[11], arrA[11],arrB[11])
+                        userInput = getMCPick()
+                        if userInput == 'A': #power
+                            print ("You belong in Electrical Engineering")
+                        else: #computer
+                            print ("You belong in Computer Engineering")
+                    else: #broad
+                        printQuestion (arrQ[12], arrA[12],arrB[12])
+                        userInput = getMCPick()
+                        if userInput == 'A': #syde
+                            print ("You belong in Systems Design Engineering")
+                        else: #biomed
+                            print ("You belong in Biomedical Engineering")
+                        
+
+                        
 
 
             
