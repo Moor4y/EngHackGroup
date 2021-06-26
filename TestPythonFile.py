@@ -108,7 +108,7 @@ def printSpace ():
 
 #obtain user info
 userName = str(input("Please enter your name: "))                    #asks for user name
-print ("Welcome,", userName, "to the Engineering Program selector.") #prints name in a welcome message
+print ("Welcome,", userName, "to the Engineering Pathway Selector.") #prints name in a welcome message
 printSpace ()
 
 #error checking student Grade
@@ -265,7 +265,7 @@ while userExit:
                                 print (arrProgram[10])
                             else:
                                 print (arrProgram[11])
-    
+    printSpace ()
     printQuestion(arrQ[20],arrA[20],arrB[20])
     userInput = getMCPick()
     printSpace ()
