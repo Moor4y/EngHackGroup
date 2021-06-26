@@ -14,3 +14,5 @@ Brainstorming
 
 - university program quiz (we will be excluding US schools cuz we ain't darn Americans)
 
+- game --> create some text-based adventure
+
