@@ -1,0 +1,7 @@
+Project Ideas
+- all ideas are welcome
+- try to keep it simple
+
+
+Brainstorming
+- productivity app that allows user to enter task name, task description, goal, and tracks their time with a stopwatch
