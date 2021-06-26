@@ -1,8 +1,8 @@
 #Data Storing 
 arrQ = ["What is your learning style?",    #array to store question information
-        "would you like to work in the natural environment",
+        "Would you like to work in the natural environment?",
         "Like studying rocks and dirt?",
-        "Would you like to work with buildings and infrastructure",
+        "Would you like to work with buildings and infrastructure?",
         "Do you prefer artistic design or structural planning?",
         "",
         "",
