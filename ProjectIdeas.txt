@@ -5,4 +5,7 @@ Project Ideas
 
 Brainstorming
 - productivity app that allows user to enter task name, task description, goal, and tracks their time with a stopwatch
+
+- cookie clicker but instead of clicking for cookies, you get cats, and it makes a meow sound everytime you clicker
+
 - game --> create some text-based adventure
