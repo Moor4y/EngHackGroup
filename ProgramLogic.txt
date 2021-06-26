@@ -5,3 +5,23 @@ user enters name and grade
 1 for printing the question info
 1 for getting user input
 and 1 for calculating user score
+
+Decision Tree
+
+Q1: Learning Style
+A: Hands On
+B: Hands Off
+
+Q2: Would your like to work in the naturla environment
+A: Yes
+B: No
+(same for both branches)
+
+Q3: Like shiny rocks and dirt?
+A: Yes (Env)
+B: No (Geo)
+
+Q4: Would you like to work with buildings and infrastructure?
+A: Yes
+B: No
+
