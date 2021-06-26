@@ -4,50 +4,80 @@ arrQ = ["What is your learning style?",    #array to store question information
         "Like studying rocks and dirt?",
         "Would you like to work with buildings and infrastructure?",
         "Do you prefer artistic design or structural planning?",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""]
+        "Would you like to work in a lab or [blank]?",
+        "How about medicine?",
+        "Would you prefer working in research and development or keeping your options open?",
+        "Are you interested in creating moving parts that work together?",
+        "Like robots?",
+        "Would you like to focus on hardware and technology or do you have a wider range of engineering interests?",
+        "Would you like to work with computer parts or with power and energy?",
+        "Medicine?",
+        "Are you interested in the business side of engineer?",
+        "Do you want to primarily work with computers and devices?",
+        "Do you prefer hardware or software?",
+        "Would you like to work in a specific area or do you have a broad range of interests?",
+        "Medicine?",
+        "Do you want to work in artistic design applications to engineering?",
+        "Do you enjoy research and analysis or do you prefer a wider range of applications?"
+         ]
 
 arrA = ["Gimme the hands on stuff",   #array to store option A information
         "I love working with nature.",
         "I'm mining for diamonds",
         "I love buildings.",
         "artistic design",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""]
+        "Gimme my lab coat.",
+        "Yes, medicine is bae.",
+        "Let's keep it broad",
+        "I want to make machines.",
+        "Robots are my jam.",
+        "Hardware and Tech please",
+        "Power and Energy",
+        "Nah bro",
+        "Business = Big $$$",
+        "I love learning about computers.",
+        "Hardware FTW",
+        "Broader the better",
+        "I need medicine",
+        "Artistic design suits me",
+        "Research sounds awesome"
+        ]
+        
 arrB = ["Gimme the hands off stuff",  #array to store option B information
         "I would rather not work with nature.",
         "No, that sounds boring.",
         "I hate buildings.",
         "structural planning",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""]
-arrComment = ["",                                       #array to store comment information
-              "",
-              "",
-              "",
-              "",
-              "",
-              "",
-              "",
-              ""]
+        "Heck no, labs are boring.",
+        "No, I don't want drugs.",
+        "Gimme research.",
+        "No, I don't like moving parts.",
+        "No, robots.",
+        "I like broad",
+        "Computers",
+        "Yeah bro",
+        "Nah, I don't like business.",
+        "Nah, computers are overrated.",
+        "Software is lit",
+        "Specializing is my specialty",
+        "I no like medicine",
+        "No artistic design for me",
+        "I want a wider range of applications"]
+arrProgram = ["You belong in Geological Engineering.",      #array to store program information
+              "You belong in Environmental Engineering.",
+              "You belong in Architectural Engineering",
+              "You belong in Civil Engineering",
+              "You belong in Electrical Engineering",
+              "You belong in Computer Engineering",
+              "You belong in Systems Design Engineering",
+              "You belong in Biomedical Engineering",
+              "You belong in Mechatronics Engineering",
+              "You belong in Mechanical Engineering",
+              "You belong in Nanotechnology Engineering",
+              "You belong in Chemical Engineering",
+              "You belong in Software Engineering",
+              "You belong in Management Engineering",
+              ]
 
 #procedures
 def printQuestion(Q,A,B):        #procedure to print the question
@@ -96,9 +126,9 @@ if userInput == 'A': #hands on
         printQuestion(arrQ[2],arrA[2],arrB[2])
         userInput = getMCPick()
         if userInput == 'A': #love rocks:
-            print ("You belong in Geological Engineering.")
+            print (arrProgram[0])
         else: #no rocks
-            print ("You belong in Environmental Engineering.")
+            print (arrProgram[1])
     else: #no like nature
         printQuestion (arrQ[3], arrA[3],arrB[3])
         userInput = getMCPick()
@@ -106,11 +136,95 @@ if userInput == 'A': #hands on
             printQuestion (arrQ[4], arrA[4],arrB[4])
             userInput = getMCPick()
             if userInput == 'A':
-                print ("You belong in Archetectural Engineering")
+                print (arrProgram[2])
             else:
-                print ("You belong in Civil Engineering")
-
-
-            
-
-
+                print (arrProgram[3])
+        else: #no like buildings
+            printQuestion (arrQ[5], arrA[5],arrB[5])
+            userInput = getMCPick()
+            if userInput == 'A': #yes lab
+                printQuestion (arrQ[6], arrA[6],arrB[6])
+                userInput = getMCPick()
+                if userInput == "A": #yes medicine
+                    print (arrProgram[7])
+                else:
+                    printQuestion (arrQ[7], arrA[7],arrB[7])
+                    userInput = getMCPick()
+                    if userInput == 'A': #broad
+                        print (arrProgram[11])            
+                    else:
+                        print (arrProgram[10])
+            else: #no lab
+                printQuestion (arrQ[8], arrA[8],arrB[8])
+                userInput = getMCPick()
+                if userInput == 'A': 
+                    printQuestion (arrQ[9], arrA[9],arrB[9])
+                    userInput = getMCPick()
+                    if userInput == 'A':
+                        print (arrProgram[8])
+                    else:
+                        print (arrProgram[9])
+                else:
+                    printQuestion (arrQ[10], arrA[10],arrB[10])
+                    userInput = getMCPick()
+                    if userInput == 'A': #hardware
+                        printQuestion (arrQ[11], arrA[11],arrB[11])
+                        userInput = getMCPick()
+                        if userInput == 'A': #power
+                            print (arrProgram[4])
+                        else: #computer
+                            print (arrProgram[5])
+                    else: #broad
+                        printQuestion (arrQ[12], arrA[12],arrB[12])
+                        userInput = getMCPick()
+                        if userInput == 'A': #syde
+                            print (arrProgram[6])
+                        else: #biomed
+                            print (arrProgram[7])
+else: #hands off
+    printQuestion(arrQ[1],arrA[1],arrB[1])
+    userInput = getMCPick()
+    if userInput == 'A': #love nature
+        printQuestion(arrQ[2],arrA[2],arrB[2])
+        userInput = getMCPick()
+        if userInput == 'A': #love rocks:
+            print (arrProgram[0])
+        else: #no rocks
+            print (arrProgram[1])
+    else:                    
+        printQuestion(arrQ[13],arrA[13],arrB[13])
+        userInput = getMCPick()
+        if userInput == 'A': #yes business
+            print (arrProgram[13])
+        else:
+            printQuestion(arrQ[14],arrA[14],arrB[14])
+            userInput = getMCPick()
+            if userInput == 'A': #yes computers 
+                printQuestion(arrQ[15],arrA[15],arrB[15])
+                userInput = getMCPick()
+                if userInput == 'A': #hardware
+                    print (arrProgram[5])
+                else: 
+                    print (arrProgram[12])
+            else:
+                printQuestion(arrQ[16],arrA[16],arrB[16])
+                userInput = getMCPick()
+                if userInput == 'A': #broad
+                    printQuestion(arrQ[16],arrA[16],arrB[16])
+                    userInput = getMCPick()
+                    if userInput == 'A': #yes medicine
+                        print (arrProgram[7])
+                    else: 
+                        print (arrProgram[6])
+                else: 
+                    printQuestion(arrQ[17],arrA[17],arrB[17])
+                    userInput = getMCPick()
+                    if userInput == 'A': #yes artistic design
+                        print (arrProgram[2])
+                    else:
+                        printQuestion(arrQ[18],arrA[18],arrB[18])
+                        userInput = getMCPick()
+                        if userInput == 'A': #research
+                            print (arrProgram[10])
+                        else:
+                            print (arrProgram[11])
