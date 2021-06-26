@@ -1,0 +1,7 @@
+PsuedoCode
+
+user enters name and grade
+3 functions
+1 for printing the question info
+1 for getting user input
+and 1 for calculating user score
