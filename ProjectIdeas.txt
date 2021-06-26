@@ -5,3 +5,4 @@ Project Ideas
 
 Brainstorming
 - productivity app that allows user to enter task name, task description, goal, and tracks their time with a stopwatch
+- game --> create some text-based adventure
