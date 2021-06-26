@@ -14,6 +14,6 @@ Brainstorming
 
 - game --> create some text-based adventure
 
-- university program quiz 
+- university program quiz --> which one will be more suitable for you? using loops and if/then statements
 
 Let's hope this works
