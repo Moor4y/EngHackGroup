@@ -16,4 +16,6 @@ Brainstorming
 
 - university program quiz --> which one will be more suitable for you? using loops and if/then statements
 
+--> sorted into engineering programs via pathways/tallies
+
 Let's hope this works
