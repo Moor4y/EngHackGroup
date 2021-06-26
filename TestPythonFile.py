@@ -11,38 +11,38 @@ arrQ = ["What is your learning style?",    #array to store question information
         "Like robots?",
         "Would you like to focus on hardware and technology or do you have a wider range of engineering interests?",
         "Would you like to work with computer parts or with power and energy?",
-        "Medicine?",
+        "Would you like to work in a medical environment or improve healthcare?",
         "Are you interested in the business side of engineer?",
         "Do you want to primarily work with computers and devices?",
         "Do you prefer hardware or software?",
         "Would you like to work in a specific area or do you have a broad range of interests?",
-        "Medicine?",
+        "Would you like to work in a medical environment or improve healthcare?",
         "Do you want to work in artistic design applications to engineering?",
         "Do you enjoy research and analysis or do you prefer a wider range of applications?",
         "Not the program for you? Take the quiz again!"
          ]
 
-arrA = ["Gimme the hands on stuff",   #array to store option A information
+arrA = ["Gimme the hands on stuff!",   #array to store option A information
         "I love working with nature.",
-        "I'm mining for diamonds",
+        "I'm mining for diamonds.",
         "I love buildings.",
-        "artistic design",
-        "Gimme my lab coat.",
+        "Artistic design!",
+        "Grab me my lab coat.",
         "Yes, medicine is bae.",
-        "Let's keep it broad",
+        "Let's keep it broad.",
         "I want to make machines.",
         "Robots are my jam.",
-        "Hardware and Tech please",
-        "Power and Energy",
-        "Nah bro",
+        "Hardware and tech please",
+        "Power and energy",
+        "Nah bro.",
         "Business = Big $$$",
         "I love learning about computers.",
-        "Hardware FTW",
-        "Broader the better",
-        "I need medicine",
-        "Artistic design suits me",
-        "Research sounds awesome",
-        "Yesss, let's go again"
+        "Hardware FTW!",
+        "Broader the better.",
+        "I need medicine.",
+        "Artistic design suits me.",
+        "Research sounds awesome.",
+        "Yesss, let's go again."
         ]
         
 arrB = ["Gimme the hands off stuff",  #array to store option B information
@@ -56,15 +56,15 @@ arrB = ["Gimme the hands off stuff",  #array to store option B information
         "No, I don't like moving parts.",
         "No, robots.",
         "I like broad",
-        "Computers",
+        "Computers.",
         "Yeah bro",
         "Nah, I don't like business.",
         "Nah, computers are overrated.",
-        "Software is lit",
+        "Software is lit!",
         "Specializing is my specialty",
-        "I no like medicine",
-        "No artistic design for me",
-        "I want a wider range of applications",
+        "I no like medicine.",
+        "No artistic design for me!",
+        "I want a wider range of applications.",
         "Nah, I'm satisfied."
         ]
 arrProgram = ["Based on your responses, we think that you’d be a great fit for geological engineering! Studying soil and rock behaviour is your thing, because you like to solve complex problems around the world no matter what field it’s in! So many choices proven to never be a bore, whether it's working in oil & gas, mineral exploration, hazard waste removal, or groundwater management and lots more!",      #array to store program information
