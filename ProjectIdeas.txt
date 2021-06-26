@@ -11,5 +11,3 @@ Brainstorming
 - write a script to scalp the web for gaming laptop prices and put them into an excel sheet
 
 - creating an all pingbot for various platforms, either as an extension or as a bot, when you write @all, it addresses everyone on all social media platforms
-
-New Idea: Mulei should just go be a plumber 
