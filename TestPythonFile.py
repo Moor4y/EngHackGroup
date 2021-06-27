@@ -2,7 +2,7 @@
 arrQ = ["What is your learning style?",    #array to store question information
         "Would you like to work in the natural environment?",
         "Like studying rocks and dirt?",
-        "Would you like to work with buildings and infrastructure?",
+        "Would you like to work with buildings and inafrastructure?",
         "Do you prefer artistic design or structural planning?",
         "Would you like to work in a lab or [blank]?",
         "How about medicine?",
